@@ -1,12 +1,150 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento Sencillo</title>
+    <title>Rincones de Viaje</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hola Mundo</h1>
-    <p>Este es un documento HTML básico.</p>
+    <header>
+        <h1>Rincones del Mundo</h1>
+    </header>
+
+    <nav>
+        <!-- Barra de Navegación -->
+        <ul>
+            <li><a href="#sobre-nosotros">Más sobre nosotros</a></li>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#experiencias">Experiencias</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>    
+
+    <main>
+        <!-- Sección de Información -->
+        <section id="sobre-nosotros">
+            <h2>Más sobre nosotros</h2>
+            <p>Somos una agencia de viajes comprometida con ofrecerte las mejores experiencias alrededor del mundo. Nuestro equipo está formado por apasionados viajeros que conocen los destinos más increíbles y están dispuestos a ayudarte a planificar tus próximas vacaciones de ensueño.</p>
+            <p>Nuestra misión es hacer que cada viaje sea inolvidable, brindándote un servicio personalizado, recomendaciones expertas y opciones de viaje a medida para que puedas explorar el mundo de la manera que siempre has soñado.</p>
+            <p>Ya sea que estés buscando unas vacaciones relajantes en la playa, una emocionante aventura en la naturaleza o una escapada cultural en una ciudad histórica, estamos aquí para convertir tus sueños de viaje en realidad. ¡Contáctanos hoy mismo y comienza a planificar tu próxima gran aventura!</p>
+        </section>
+        
+        <!-- Sección de Destinos -->
+        <section id="destinos">
+            <h2>Destinos</h2>
+            <div class="destino">
+                <a href="https://www.expedia.mx/Acapulco.dx179991" class="enlace-imagen">
+                     <img src="Imagenes/destino1.jpg" alt="Destino 1" class="imagen-destino"/>
+                     <span class="texto-hover">Da click para obtener más información</span>
+                </a>
+                <h3>Acapulco</h3>
+                <p>Acapulco es una ciudad y puerto mexicano ubicado en el estado de Guerrero, conocido por sus hermosas playas y su animada vida nocturna. Ofrece una amplia gama de actividades, desde relajarse en la playa hasta disfrutar de emocionantes deportes acuáticos.</p>
+            </div>
+            <div class="destino">
+                <a href="https://www.expedia.mx/Los-Cabos.dx180032" class="enlace-imagen">
+                    <img src="Imagenes/destino2.jpg" alt="Destino 2" class="imagen-destino"/>
+                    <span class="texto-hover">Da click para obtener más información</span>
+               </a>
+                <h3>Los Cabos</h3>
+                <p>Los Cabos es un destino turístico en el extremo sur de la península de Baja California en México. Es famoso por sus impresionantes paisajes desérticos, playas vírgenes y actividades al aire libre. Los Cabos es también conocido por su lujosa oferta hotelera y sus campos de golf de clase mundial.</p>
+            </div>
+        </section>
+
+        <!-- Sección de Experiencias -->
+        <section id="experiencias">
+            <h2>Experiencias</h2>
+            <div class="experiencia">
+                <img src="Imagenes/experiencia1.jpg" alt="Experiencia 1">
+                <h3>Bahía de Puerto Marqués en la tirolesa de Xtasea</h3>
+                <p>Disfruta de una emocionante aventura en la tirolesa de Xtasea, ubicada en la Bahía de Puerto Marqués en Acapulco. Vuela sobre las aguas turquesas del océano Pacífico y admira las impresionantes vistas de Acapulco mientras experimentas una descarga de adrenalina única.</p>
+            </div>
+            <div class="experiencia">
+                <img src="Imagenes/experiencia2.jpg" alt="Experiencia 2">
+                <h3>Avistamiento de ballenas</h3>
+                <p>Vive la experiencia inolvidable de avistar ballenas en Los Cabos. Embárcate en una emocionante excursión marítima y observa de cerca a estas majestuosas criaturas en su hábitat natural. Los Cabos ofrece una de las mejores oportunidades para el avistamiento de ballenas en México.</p>
+            </div>
+        </section>
+
+        <!-- Sección de Testimonios -->
+        <section id="testimonios">
+            <h2>Testimonios</h2>
+            <div class="testimonio">
+                <div class="mensaje">
+                    <div class="avatar">
+                        <img src="Imagenes/avatar1.jpg" alt="Avatar 1">
+                    </div>
+                    <div class="contenido">
+                        <p>"¡Una experiencia increíble! Nunca olvidaré el viaje a Acapulco y la adrenalina de la tirolesa de Xtasea. ¡Definitivamente volveré!"</p>
+                        <cite>María Pérez</cite>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonio">
+                <div class="mensaje">
+                    <div class="avatar">
+                        <img src="Imagenes/avatar2.jpg" alt="Avatar 2">
+                    </div>
+                    <div class="contenido">
+                        <p>"El avistamiento de ballenas en Los Cabos fue simplemente mágico. Una experiencia que todos deberían vivir al menos una vez en la vida. ¡Gracias por este viaje inolvidable!"</p>
+                        <cite>José Rodríguez</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="formulario">
+        <h2>¡Contáctanos!</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rincones de Viaje</p>
+        <p>by Aldo Giovanni Mercado Rodriguez</p>
+    </footer>
+
+    <!-- Script de Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        // Cuando se envía el formulario
+        $("form").submit(function(event){
+            event.preventDefault();
+            // Obtener los datos del formulario
+            var formData = $(this).serialize();       
+            // Realizar la solicitud AJAX
+            $.ajax({
+                type: "POST",
+                url: "procesar_formulario.php",
+                data: formData,
+                success: function(response){
+                    // Mostrar el mensaje de éxito en un cuadro de diálogo
+                    alert(response);
+                },
+                error: function(){
+                    // Manejar errores si ocurrieron
+                    alert("Ha ocurrido un error al procesar el formulario.");
+                }
+            });
+        });
+    });
+    </script>
 </body>
 </html>
