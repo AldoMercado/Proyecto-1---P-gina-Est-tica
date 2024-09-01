@@ -1,245 +1,8 @@
-/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f7f9;
     margin: 0;
     padding: 0;
-    background-color: #f0f7f9; /* Azul claro */
-}
-
-header {
-    background-color: #48cae4; /* Azul tiffany */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-nav {
-    background-color: #48cae4; /* Azul tiffany */
-    padding: 10px 0;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #48cae4; /* Azul tiffany */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Formulario de contacto */
-.formulario {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.formulario h2 {
-    text-align: center;
-    color: #333333;
-}
-
-.formulario label {
-    display: block;
-    margin-top: 10px;
-}
-
-/* Estilos del formulario */
-.formulario input[type="text"],
-.formulario input[type="email"],
-.formulario input[type="tel"],
-.formulario textarea {
-    width: 100%;
-    padding: 12px 16px;
-    margin-bottom: 20px;
-    border: 1px solid #cccccc; 
-    border-radius: 10px;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-.formulario button {
-    background-color: #48cae4;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.formulario button:hover {
-    background-color: #55b7e5; 
-}
-
-/* Estilos para estinos y experiencias */
-#destinos,
-#experiencias {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-/* Estilos para cada bloque de destino o experiencia */
-.destino,
-.experiencia {
-    width: calc(50% - 20px); 
-    margin-bottom: 40px; 
-    box-sizing: border-box;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #ffffff; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-
-/* Estilos para las imágenes en los bloques de destino o experiencia */
-.destino img,
-.experiencia img {
-    width: 100%; 
-    border-radius: 10px; 
-    margin-bottom: 10px; 
-}
-
-/* Estilos para los títulos en los bloques de destino o experiencia */
-.destino h3,
-.experiencia h3 {
-    font-size: 20px; 
-    margin-bottom: 10px; 
-}
-
-/* Estilos para los párrafos en los bloques de destino o experiencia */
-.destino p,
-.experiencia p {
-    line-height: 1.5; 
-}
-
-/* Estilos para la sección de Testimonios */
-#testimonios {
-    padding: 20px;
-}
-
-/* Estilos para los mensajes de testimonio */
-.mensaje {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-/* Estilos para los avatares */
-.avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 10px;
-}
-
-.avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Estilos para los contenidos de los testimonios */
-.contenido {
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-/* Estilos para los testimonios alternados */
-.testimonio:nth-child(even) .mensaje {
-    flex-direction: row-reverse;
-}
-
-.testimonio:nth-child(even) .avatar {
-    margin-left: 10px;
-    margin-right: 0;
-}
-
-/* Estilos para los Destinos y Experiencias */
-#destinos h2,
-#experiencias h2 {
-    text-align: center; 
-    font-size: 90px; 
-    margin-top: 40px; 
-    margin-bottom: 20px;
-    color: #333333; 
-}
-
-#testimonios h2,
-#sobre-nosotros h2 {
-    text-align: center; 
-    font-size: 50px;
-    margin-top: 40px; 
-    margin-bottom: 20px; 
-    color: #333333; 
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-
-#sobre-nosotros {
-    background-color: #f0f8ff; /* Celeste claro */
-    padding: 50px;
-    text-align: center;
-}
-
-#sobre-nosotros p {
-    color: #333;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-#sobre-nosotros a {
-    color: #00bfff; /* Azul cielo */
-    text-decoration: none;
-    border-bottom: 1px solid #00bfff; /* Borde inferior azul cielo */
-    transition: border-bottom 0.3s ease;
-}
-
-#sobre-nosotros a:hover {
-    border-bottom: 2px solid #00bfff; /* Borde inferior más grueso al pasar el mouse */
 }
 
 .enlace-imagen {
@@ -261,13 +24,36 @@ html {
     padding: 10px 20px;
     opacity: 0;
     transition: opacity 0.3s;
+    border-radius: 5px;
 }
 
 .enlace-imagen:hover .imagen-destino {
-    transform: scale(1.1); /* Zoom */
-    opacity: 0.7; /* Opacidad */
+    transform: scale(1.1);
+    opacity: 0.7;
 }
 
 .enlace-imagen:hover .texto-hover {
-    opacity: 1; /* Mostrar texto al pasar el mouse */
+    opacity: 1;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.contenido {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
 }
